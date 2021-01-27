@@ -65,6 +65,8 @@
 
 echo "$@"
 
+Here I am changing something in the file
+
 # How are you going to work with each file path?
 # HINT: for loop (remember "for do done"?)
 #
