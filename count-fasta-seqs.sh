@@ -65,7 +65,7 @@
 
 echo "$@"
 
-Here I am changing something in the file
+# Here I am changing something in the file
 
 # How are you going to work with each file path?
 # HINT: for loop (remember "for do done"?)
@@ -95,4 +95,8 @@ Here I am changing something in the file
 # Good luck!
 #
 # ADD YOUR CODE BELOW:
-I will do my best! But looking at the exercise instructions, I have no clue, how to do that.
+# I will do my best! 
+# But looking at the exercise instructions, I have no clue, how to do that.
+
+grep -o -i "Negros" example-seqs1.fasta | wc -l; grep -o -i "Negros" example-seqs2.fasta | wc -l; grep -o -i "Negros" example-seqs1.fasta example-seqs2.fasta | wc -l
+
