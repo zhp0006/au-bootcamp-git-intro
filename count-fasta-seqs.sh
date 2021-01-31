@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # works perfectly fine, test output looks like it should, but fails nonetheless
-# space between sequence count and basename is still missing
- 
-for f in "$@"; do grep -o -i ">" ${f} | wc -l | tr -d '\n'; basename ${f}; done
-cat "$@" | grep -c ">" 
+# left align is not possible, who knows why...
+
+for f in "$@"; do count=$(grep -o -i ">" ${f} | wc -l); name=$(basename ${f}); printf '%-10s\n' "$count $name"; done
+cat "$@" | grep -c ">"
