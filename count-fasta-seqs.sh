@@ -5,5 +5,5 @@
 
 for f in "$@"; do count=$(grep -o -i ">" ${f} | wc -l | xargs); name=$(basename ${f}); echo "$count $name"; done
 cat "$@" | grep -c ">"
-
+hsfk;lusiodcv
 # Great job everyone! -Randy
